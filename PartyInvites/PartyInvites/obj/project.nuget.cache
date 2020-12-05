@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nVbpWL6KTPR7ahpLPu2Qu6E+HHNWgVfQNQjYw4xcLkG3bmYcsQIMi4hWr+o+KaZ+yaLQ4gvWd2RgwK2BsoPmIg==",
+  "success": true,
+  "projectFilePath": "/Users/nhanduong/ExploreAspDotNetCore/PartyInvites/PartyInvites/PartyInvites.csproj",
+  "expectedPackageFiles": [
+    "/Users/nhanduong/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
+  ],
+  "logs": []
+}
