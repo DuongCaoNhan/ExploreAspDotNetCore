@@ -35,11 +35,19 @@ namespace PartyInvites.Controllers
         // }
 
         //TodoAction
-        public IActionResult Index(){
+        public IActionResult Index()
+        {
             return View();
         }
 
-        public ViewResult RsvpForm(){
+        [HttpGet] //method sau day chi su dung cho GET request.
+        public ViewResult RsvpForm()
+        {
+            return View();
+        }
+        
+        [HttpPost]// method sau day chi su ly POST request.
+        public ViewResult RsvpForm(GuestResponse guestResponse ){
             return View();
         }
     }
