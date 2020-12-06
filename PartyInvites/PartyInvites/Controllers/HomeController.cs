@@ -45,10 +45,12 @@ namespace PartyInvites.Controllers
         {
             return View();
         }
-        
+
         [HttpPost]// method sau day chi su ly POST request.
         public ViewResult RsvpForm(GuestResponse guestResponse ){
-            return View();
+
+            Repository.AddResponse(guestResponse);
+            return View("Thanks", guestResponse);
         }
     }
 }

@@ -36,3 +36,4 @@
 /Users/nhanduong/ExploreAspDotNetCore/PartyInvites/PartyInvites/obj/Debug/netcoreapp3.1/PartyInvites.genruntimeconfig.cache
 /Users/nhanduong/ExploreAspDotNetCore/PartyInvites/PartyInvites/obj/Debug/netcoreapp3.1/PartyInvites.csproj.CopyComplete
 /Users/nhanduong/ExploreAspDotNetCore/PartyInvites/PartyInvites/obj/Debug/netcoreapp3.1/Razor/Views/Home/RsvpForm.cshtml.g.cs
+/Users/nhanduong/ExploreAspDotNetCore/PartyInvites/PartyInvites/obj/Debug/netcoreapp3.1/Razor/Views/Home/Thanks.cshtml.g.cs

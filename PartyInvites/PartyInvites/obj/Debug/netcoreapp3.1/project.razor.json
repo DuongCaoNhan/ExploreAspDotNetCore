@@ -14417,6 +14417,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/nhanduong/ExploreAspDotNetCore/PartyInvites/PartyInvites/Views/Home/Thanks.cshtml",
+      "TargetPath": "Views\\Home\\Thanks.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/nhanduong/ExploreAspDotNetCore/PartyInvites/PartyInvites/Views/Home/RsvpForm.cshtml",
       "TargetPath": "Views\\Home\\RsvpForm.cshtml",
       "FileKind": "mvc"
