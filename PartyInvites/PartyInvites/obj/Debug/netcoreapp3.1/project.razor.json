@@ -14392,6 +14392,11 @@
   "RootNamespace": "PartyInvites",
   "Documents": [
     {
+      "FilePath": "/Users/nhanduong/ExploreAspDotNetCore/PartyInvites/PartyInvites/Views/Home/ListResponses.cshtml",
+      "TargetPath": "Views\\Home\\ListResponses.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/nhanduong/ExploreAspDotNetCore/PartyInvites/PartyInvites/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

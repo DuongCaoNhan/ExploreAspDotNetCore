@@ -47,10 +47,24 @@ namespace PartyInvites.Controllers
         }
 
         [HttpPost]// method sau day chi su ly POST request.
-        public ViewResult RsvpForm(GuestResponse guestResponse ){
+        public ViewResult RsvpForm(GuestResponse guestResponse)
+        {
+            if (ModelState.IsValid) //ModelState do base controler cung cap
+                                    //chua thong tin chi tiet va ket qua ve qua trinh rang buoc cua Model
+            {
+                Repository.AddResponse(guestResponse);
+                return View("Thanks", guestResponse);
+            }
+            else
+            {
+                return View();
+            }
+        }
 
-            Repository.AddResponse(guestResponse);
-            return View("Thanks", guestResponse);
+        // Do khong co chi dinh ten view nen Razor se render the defaut view, dung ten action method lam ten Views file 
+        public ViewResult ListResponses()
+        {
+            return View(Repository.Responses.Where(r => r.WillAttend == true));
         }
     }
 }
