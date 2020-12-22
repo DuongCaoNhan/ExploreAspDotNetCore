@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YV/qB7mPYzTcVT7Q7IPOn/LDclG9Cw/F39+b2acdJXEKWvrjmdDbwmb7lps7fJk4tVaJhsXc7hfiQz/u3S1D/A==",
+  "success": true,
+  "projectFilePath": "/Users/nhanduong/ExploreAspDotNetCore/MySolution/MyProject/MyProject.csproj",
+  "expectedPackageFiles": [
+    "/Users/nhanduong/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
+  ],
+  "logs": []
+}
