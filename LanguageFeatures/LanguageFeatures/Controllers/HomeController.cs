@@ -7,24 +7,35 @@ namespace LanguageFeatures.Controllers
     {
         public ViewResult Index()
         {
-            //The null conditional operator allows for null values to be detected more elegantly(thanh lich) :).
-            List<string> results = new List<string>();
-            foreach (Product p in Product.GetProducts())
-            {
-                // string name = p?.Name;
-                // decimal? price = p?.Price;
-                // string relatedName = p?.Related?.Name; 
+            // //The null conditional operator allows for null values to be detected more elegantly(thanh lich) :).
+            // List<string> results = new List<string>();
+            // foreach (Product p in Product.GetProducts())
+            // {
+            //     // string name = p?.Name;
+            //     // decimal? price = p?.Price;
+            //     // string relatedName = p?.Related?.Name; 
 
-                //Combining the Conditional and Coalescing Operators
-                string name = p?.Name ?? "<No Name>";
-                decimal? price = p?.Price ?? 0;
-                string relatedName = p?.Related?.Name ?? "<None>";
+            //     //Combining the Conditional and Coalescing Operators
+            //     string name = p?.Name ?? "<No Name>";
+            //     decimal? price = p?.Price ?? 0;
+            //     string relatedName = p?.Related?.Name ?? "<None>";
 
-                // results.Add(string.Format("Name: {0}, Price: {1}", name, price));
-                results.Add(string.Format("Name: {0}, Price: {1}, Related: {2}", name, price, relatedName));
-            }
-            return View(results);
-            // return View(new string[] { "C#", "Language", "Features" });
+            //     // results.Add(string.Format("Name: {0}, Price: {1}", name, price));
+            //     results.Add(string.Format("Name: {0}, Price: {1}, Related: {2}", name, price, relatedName));
+            // }
+            // return View(results);
+            // // return View(new string[] { "C#", "Language", "Features" });
+
+            //----------------------------------------------------------------
+            // Using Object and Collection Initializers
+            // string[] names = new string[3]; 
+            // names[0] = "Bob"; 
+            // names[1] = "Joe"; 
+            // names[2] = "Alice"; 
+            // return View("Index", names);
+
+            // return View("Index", new string[] { "Bob", "Joe", "Alice" });
+
         }
     }
 }
