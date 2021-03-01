@@ -36,11 +36,44 @@ namespace LanguageFeatures.Controllers
 
             // return View("Index", new string[] { "Bob", "Joe", "Alice" });
             //--------------------------------
-            //Using an Index Initializer
-            Dictionary<string, Product> products = new Dictionary<string, Product> { { "Kayak", new Product { Name = "Kayak", Price = 275M } }
-                                                                                   , { "Lifejacket", new Product{ Name = "Lifejacket", Price = 48.95M } }
-            }; 
-            return View("Index", products.Keys);
+            // Using an Index Initializer
+            // Dictionary<string, Product> products = new Dictionary<string, Product> { 
+            //     { "Kayak", new Product { Name = "Kayak", Price = 275M } }
+            //   , { "Lifejacket", new Product{ Name = "Lifejacket", Price = 48.95M } }
+            // }; 
+            // return View("Index", products.Keys);
+
+            // Dictionary<string, Product> products = new Dictionary<string, Product> {
+            //     ["Kayak"] = new Product { Name = "Kayak", Price = 275M }
+            //   , ["Lifejacket"] = new Product { Name = "Lifejacket", Price = 48.95M }
+            // };
+            // return View("Index", products.Keys);
+
+            //Pattern matching
+            object[] data = new object[] { 275M, 29.95M, "apple", "orange", 100, 10 };
+            decimal total = 0;
+            // for (int i = 0; i < data.Length; i++)
+            // {
+            //     if (data[i] is decimal d)
+            //     {
+            //         total += d;
+            //     }
+            // }
+
+            // return View("Index", new string[] { $"Total: {total:C2}" });
+
+            //Pattern Matching in switch Statements
+            for (int i = 0; i < data.Length; i++) { 
+                switch (data[i]) { 
+                    case decimal decimalValue: 
+                        total += decimalValue; 
+                        break; 
+                    case int intValue when intValue > 50:
+                        total += intValue; 
+                        break;
+                }
+            }
+            return View("Index", new string[] { $"Total: {total:C2}" });
         }
     }
 }
