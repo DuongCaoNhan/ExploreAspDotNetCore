@@ -8,13 +8,18 @@ namespace LanguageFeatures.Models {
                 total += prod?.Price ?? 0; 
                 } 
             return total; }
-            public static IEnumerable<Product> FilterByPrice( 
-                this IEnumerable<Product> productEnum, decimal minimumPrice) { 
+            public static IEnumerable<Product> FilterByPrice( this IEnumerable<Product> productEnum, decimal minimumPrice) { 
                     foreach (Product prod in productEnum) { 
                         if ((prod?.Price ?? 0) >= minimumPrice) { 
                             yield return prod; 
                         } 
                     }
                  }
+            public static IEnumerable<Product> FilterByName( this IEnumerable<Product> productEnum, char firstLetter){
+                foreach(Product prod in productEnum) {
+                    if (prod?.Name?[0] == firstLetter)
+                    yield return prod;
+                }
+            }
     }
 }
