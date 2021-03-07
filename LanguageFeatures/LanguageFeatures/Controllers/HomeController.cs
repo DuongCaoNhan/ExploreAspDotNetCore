@@ -1,10 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using LanguageFeatures.Models;
+using System;
 namespace LanguageFeatures.Controllers
 {
     public class HomeController : Controller
     {
+        bool FilterByPrice(Product p)
+        {
+            return (p?.Price ?? 0) >= 20;
+        }
         public ViewResult Index()
         {
             // //The null conditional operator allows for null values to be detected more elegantly(thanh lich) :).
@@ -88,13 +93,25 @@ namespace LanguageFeatures.Controllers
                     new Product {Name = "Lifejacket", Price = 48.95M},
                     new Product {Name = "Soccer ball", Price = 19.50M},
                     new Product {Name = "Corner flag", Price = 34.95M} };
-            decimal arrayTotal = productArray.FilterByPrice(20).TotalPrices();
-            decimal priceFilterTotal = productArray.FilterByPrice(20).TotalPrices();
-            decimal nameFilterTotal = productArray.FilterByName('S').TotalPrices();
+            // decimal arrayTotal = productArray.FilterByPrice(20).TotalPrices();
+            // decimal priceFilterTotal = productArray.FilterByPrice(20).TotalPrices();
+            // decimal nameFilterTotal = productArray.FilterByName('S').TotalPrices();
 
-            // return View("Index", new string[] { $"Array Total: {arrayTotal:C2}" });
-            return View("Index", new string[] { $"Price Total: {priceFilterTotal:C2}", $"Name Total: {nameFilterTotal:C2}" });
-
+            // // return View("Index", new string[] { $"Array Total: {arrayTotal:C2}" });
+            // return View("Index", new string[] { 
+            //       $"Price Total: {priceFilterTotal:C2}"
+            //     , $"Name Total: {nameFilterTotal:C2}" });
+            // / khoong cos cachs tiep can naof la lys tuongw
+            // Func<Product, bool> nameFilter = delegate (Product prod)
+            // {
+            //     return prod?.Name?[0] == 'S';
+            // };
+            // decimal priceFilterTotal = productArray.Filter(FilterByPrice).TotalPrices();
+            // decimal nameFilterTotal = productArray.Filter(nameFilter).TotalPr
+            decimal priceFilterTotal = productArray.Filter(p => (p?.Price ?? 0) >= 20).TotalPrices();
+            decimal nameFilterTotal = productArray.Filter(p => p?.Name?[0] == 'S').TotalPrices();
+            return View("Index", new string[] {$"Price TOTAL: {priceFilterTotal:C2}",
+                                                $"Name Total: {nameFilterTotal:C2}"});
         }
     }
 }
