@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using LanguageFeatures.Models;
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace LanguageFeatures.Controllers
 {
@@ -12,8 +13,9 @@ namespace LanguageFeatures.Controllers
         // {
         //     return (p?.Price ?? 0) >= 20;
         // }
-        public ViewResult Index()
+        public async Task<ViewResult> Index()
         {
+            #region 
             // //The null conditional operator allows for null values to be detected more elegantly(thanh lich) :).
             // List<string> results = new List<string>();
             // foreach (Product p in Product.GetProducts())
@@ -130,12 +132,19 @@ namespace LanguageFeatures.Controllers
             // return View(products.Select(p => p.Name));
             // return View(products.Select(p => p.GetType().Name));
             //Using Default Implementations in Interfaces
-            IProductSelection cart = new ShoppingCart(
-                new Product { Name = "Kayak", Price = 275M },
-                new Product { Name = "Lifejacket", Price = 48.95M },
-                new Product { Name = "Soccer ball", Price = 19.50M },
-                new Product { Name = "Corner flag", Price = 34.95M });
-            return View(cart.Products.Select(p => p.Name));
+            // IProductSelection cart = new ShoppingCart(
+            //     new Product { Name = "Kayak", Price = 275M },
+            //     new Product { Name = "Lifejacket", Price = 48.95M },
+            //     new Product { Name = "Soccer ball", Price = 19.50M },
+            //     new Product { Name = "Corner flag", Price = 34.95M });
+            // // return View(cart.Products.Select(p => p.Name));
+            // return View(cart.Names);
+            #endregion
+            //Using Asynchronous Methods
+            long? length = await MyAsyncMethods.GetPageLength();
+            return View(new string[] { $"Length: {length}"
+            });
         }
+
     }
 }
