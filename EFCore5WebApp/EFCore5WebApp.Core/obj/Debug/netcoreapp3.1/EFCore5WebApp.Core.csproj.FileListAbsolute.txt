@@ -1,0 +1,12 @@
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\bin\Debug\netcoreapp3.1\EFCore5WebApp.Core.deps.json
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\bin\Debug\netcoreapp3.1\EFCore5WebApp.Core.dll
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\bin\Debug\netcoreapp3.1\EFCore5WebApp.Core.pdb
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\bin\Debug\netcoreapp3.1\EFCore5WebApp.DAL.dll
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\bin\Debug\netcoreapp3.1\EFCore5WebApp.DAL.pdb
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\obj\Debug\netcoreapp3.1\EFCore5WebApp.Core.csprojAssemblyReference.cache
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\obj\Debug\netcoreapp3.1\EFCore5WebApp.Core.AssemblyInfoInputs.cache
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\obj\Debug\netcoreapp3.1\EFCore5WebApp.Core.AssemblyInfo.cs
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\obj\Debug\netcoreapp3.1\EFCore5WebApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\obj\Debug\netcoreapp3.1\EFCore5WebApp.Core.csproj.CopyComplete
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\obj\Debug\netcoreapp3.1\EFCore5WebApp.Core.dll
+C:\Users\nhan6\Documents\GitHub\ExploreAspDotNetCore\EFCore5WebApp\EFCore5WebApp.Core\obj\Debug\netcoreapp3.1\EFCore5WebApp.Core.pdb
