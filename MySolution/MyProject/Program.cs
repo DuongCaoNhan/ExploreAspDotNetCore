@@ -19,6 +19,9 @@ namespace MyProject
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
+                                          
+                                          
+                                          //todo
                 {
                     webBuilder.UseStartup<Startup>();
                 });
